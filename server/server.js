@@ -90,7 +90,9 @@ app.post("/api/agent-musique", async (req, res) => {
 
 
 const PORT = process.env.PORT || 3001;
-app.listen(PORT, () => console.log(`server ecoute sur http://localhost:${PORT}`));
+//app.listen(PORT, () => console.log(`server ecoute sur http://localhost:${PORT}`));
+app.listen(PORT, '0.0.0.0', () => console.log(`server ecoute sur http://0.0.0.0:${PORT}`));
+
 
 
 
